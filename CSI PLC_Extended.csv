@@ -143,7 +143,7 @@ DI-0.1.1.6,"DUMP LIMIT",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.6","DI",
 SSTRUC-000006,"DUMP LIMIT TMR",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000012,"DUMP LIMIT TMR.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000010,"DUMP LIMIT TMR.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
-S32-000011,"DUMP LIMIT TMR.Preset",false,"3000",,,,,,,,false,false,"0",false,,"S32","STMR",false
+S32-000011,"DUMP LIMIT TMR.Preset",false,"1800",,,,,,,,false,false,"0",false,,"S32","STMR",false
 DO-0.1.2.2,"DUMP PUMP",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.2","DO",,false
 SSTRUC-000008,"DUMP SOL",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000016,"DUMP SOL.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
