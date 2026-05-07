@@ -178,9 +178,6 @@ MST-0.0.0.35,"MST-0.0.0.35",false,"0",,,,,,,"TB Port Ready Bit",false,false,"0"
 MST-0.0.0.65,"MST-0.0.0.65",false,"0",,,,,,,"Ethernet Heartbeat Timeout Bit",false,false,"0"
 MST-0.0.0.66,"MST-0.0.0.66",false,"0",,,,,,,"Ethernet Port Buffer Full Bit (95% Full)",false,false,"0"
 MST-0.0.0.67,"MST-0.0.0.67",false,"0",,,,,,,"Ethernet Port Ready Bit",false,false,"0"
-C-000020,"MYSTERY BIT",false,"0",,,,,,,,false,false,"0"
-DI-0.1.1.12,"MYSTERY INPUT",false,"0",,,,,,,,true,false,"0"
-DO-0.1.2.11,"MYSTERY OUTPUT",false,"0",,,,,,,,false,false,"0"
 S32-000026,"MYSTERY TMR 1.Current",false,"0",,,,,,,,false,false,"0"
 C-000017,"MYSTERY TMR 1.Done",false,"0",,,,,,,,false,false,"0"
 S32-000025,"MYSTERY TMR 1.Preset",false,"15",,,,,,,,false,false,"0"
@@ -241,6 +238,9 @@ SWR-001502,"Peak Scan Interval [x100=usec]",false,"0",,,,,,,"longest overall sca
 SBRW-001006,"Portable Memory Device Eject",false,"0",,,,,,,"Users set to 1(ON) and the system reset to 0 as eject is completed",,,
 SBR-000001,"Portable Memory Device Ready",false,"0",,,,,,,"PMD is installed and ready to use",,,
 SWR-001512,"Program Memory Size",false,"0",,,,,,,"current percentage of CPU memory used by the project",,,
+C-000020,"REMOTE START BIT",false,"0",,,,,,,,false,false,"0"
+DO-0.1.2.11,"REMOTE START OUTPUT",false,"0",,,,,,,,false,false,"0"
+DI-0.1.1.12,"REMOTE START SWITCH",false,"0",,,,,,,,true,false,"0"
 S32-000020,"REMOTE STOP DELAY.Current",false,"0",,,,,,,,false,false,"0"
 C-000014,"REMOTE STOP DELAY.Done",false,"0",,,,,,,,false,false,"0"
 S32-000019,"REMOTE STOP DELAY.Preset",false,"20",,,,,,,,false,false,"0"

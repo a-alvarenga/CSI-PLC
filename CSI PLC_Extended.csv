@@ -183,9 +183,6 @@ MST-0.0.0.35,"MST-0.0.0.35",false,"0",,,,,,,"TB Port Ready Bit",false,false,"0",
 MST-0.0.0.65,"MST-0.0.0.65",false,"0",,,,,,,"Ethernet Heartbeat Timeout Bit",false,false,"0",false,"MST-0.0.0.65","MST",,false
 MST-0.0.0.66,"MST-0.0.0.66",false,"0",,,,,,,"Ethernet Port Buffer Full Bit (95% Full)",false,false,"0",false,"MST-0.0.0.66","MST",,false
 MST-0.0.0.67,"MST-0.0.0.67",false,"0",,,,,,,"Ethernet Port Ready Bit",false,false,"0",false,"MST-0.0.0.67","MST",,false
-C-000020,"MYSTERY BIT",false,"0",,,,,,,,false,false,"0",false,,"C",,false
-DI-0.1.1.12,"MYSTERY INPUT",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.12","DI",,false
-DO-0.1.2.11,"MYSTERY OUTPUT",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.11","DO",,false
 SSTRUC-000013,"MYSTERY TMR 1",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000026,"MYSTERY TMR 1.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000017,"MYSTERY TMR 1.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
@@ -249,6 +246,9 @@ SWR-001502,"Peak Scan Interval [x100=usec]",false,"0",,,,,,,"longest overall sca
 SBRW-001006,"Portable Memory Device Eject",false,"0",,,,,,,"Users set to 1(ON) and the system reset to 0 as eject is completed",,,,false,,"SBRW",,false
 SBR-000001,"Portable Memory Device Ready",false,"0",,,,,,,"PMD is installed and ready to use",,,,false,,"SBR",,false
 SWR-001512,"Program Memory Size",false,"0",,,,,,,"current percentage of CPU memory used by the project",,,,false,,"SWR",,false
+C-000020,"REMOTE START BIT",false,"0",,,,,,,,false,false,"0",false,,"C",,false
+DO-0.1.2.11,"REMOTE START OUTPUT",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.11","DO",,false
+DI-0.1.1.12,"REMOTE START SWITCH",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.12","DI",,false
 SSTRUC-000010,"REMOTE STOP DELAY",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000020,"REMOTE STOP DELAY.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000014,"REMOTE STOP DELAY.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
