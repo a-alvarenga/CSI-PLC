@@ -52,7 +52,7 @@ S32-000036,"CYCLE START INHIBIT.Current",false,"0",,,,,,,,false,false,"0",false,
 C-000024,"CYCLE START INHIBIT.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
 C-000026,"CYCLE START INHIBIT.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
 C-000025,"CYCLE START INHIBIT.Less",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
-S32-000034,"CYCLE START INHIBIT.Preset",false,"100",,,,,,,,false,false,"0",false,,"S32","TMR",false
+S32-000034,"CYCLE START INHIBIT.Preset",false,"90000",,,,,,,,false,false,"0",false,,"S32","TMR",false
 S32-000035,"CYCLE START INHIBIT.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 SWR-001523,"Clock Day",false,"0",,,,,,,"current Real Time Clock Calendar Day",,,,false,,"SWR",,false
 SWRW-001754,"Clock Day Set",false,"0",,,,,,,"new Real Time Clock Day (set all 3 date values then set ""Initiate_New_Date"" on)",,,,false,,"SWRW",,false
@@ -113,7 +113,6 @@ SWR-001516,"Current I/O Config Error Base",false,"0",,,,,,,"I/O base in which ""
 SWR-001515,"Current I/O Config Error Group",false,"0",,,,,,,"I/O group in which ""I/O Configuration Error"" occurred",,,,false,,"SWR",,false
 SWR-001517,"Current I/O Config Error Slot",false,"0",,,,,,,"I/O slot in which ""I/O Configuration Error"" occurred",,,,false,,"SWR",,false
 SWR-001511,"Current Non-critical Error",false,"0",,,,,,,"current noncritical error number",,,,false,,"SWR",,false
-DI-0.1.1.13,"DI-0.1.1.13",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.13","DI",,false
 DI-0.1.1.14,"DI-0.1.1.14",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.14","DI",,false
 DI-0.1.1.15,"DI-0.1.1.15",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.15","DI",,false
 DI-0.1.1.16,"DI-0.1.1.16",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.16","DI",,false
@@ -139,6 +138,14 @@ DO-0.1.4.6,"DO-0.1.4.6",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.6","DO"
 DO-0.1.4.7,"DO-0.1.4.7",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.7","DO",,false
 DO-0.1.4.8,"DO-0.1.4.8",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.8","DO",,false
 DI-0.1.1.8,"DOWN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.8","DI",,false
+SSTRUC-000018,"DO_NOT_PUSH",false,,,,,,,,"System Structure for Counter",,,,false,,"SSTRUC","CNT",false
+S32-000039,"DO_NOT_PUSH.Current",true,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
+C-000028,"DO_NOT_PUSH.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
+C-000030,"DO_NOT_PUSH.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
+C-000029,"DO_NOT_PUSH.Less",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
+S32-000037,"DO_NOT_PUSH.Preset",false,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
+S32-000038,"DO_NOT_PUSH.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
+DI-0.1.1.13,"DO_NOT_PUSH_BTN",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.13","DI",,false
 DI-0.1.1.6,"DUMP LIMIT",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.6","DI",,false
 SSTRUC-000006,"DUMP LIMIT TMR",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000012,"DUMP LIMIT TMR.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
@@ -186,7 +193,7 @@ MST-0.0.0.67,"MST-0.0.0.67",false,"0",,,,,,,"Ethernet Port Ready Bit",false,fals
 SSTRUC-000013,"MYSTERY TMR 1",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000026,"MYSTERY TMR 1.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000017,"MYSTERY TMR 1.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
-S32-000025,"MYSTERY TMR 1.Preset",false,"15",,,,,,,,false,false,"0",false,,"S32","STMR",false
+S32-000025,"MYSTERY TMR 1.Preset",false,"30",,,,,,,,false,false,"0",false,,"S32","STMR",false
 SSTRUC-000014,"MYSTERY TMR 2",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000028,"MYSTERY TMR 2.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000018,"MYSTERY TMR 2.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
