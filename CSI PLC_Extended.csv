@@ -12,6 +12,13 @@ SSTRUC-000002,"AMP TIMER",false,,,,,,,,"System Structure for Simple Timer",,,,fa
 S32-000004,"AMP TIMER.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000002,"AMP TIMER.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
 S32-000003,"AMP TIMER.Preset",false,"150",,,,,,,,false,false,"0",false,,"S32","STMR",false
+SSTRUC-000019,"AUTO STOP TIMER",false,,,,,,,,"System Structure for Timer",,,,false,,"SSTRUC","TMR",false
+S32-000042,"AUTO STOP TIMER.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
+C-000031,"AUTO STOP TIMER.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000033,"AUTO STOP TIMER.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000032,"AUTO STOP TIMER.Less",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+S32-000040,"AUTO STOP TIMER.Preset",false,"75",,,,,,,,false,false,"0",false,,"S32","TMR",false
+S32-000041,"AUTO STOP TIMER.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 SBR-001002,"Always Off Bit",false,"0",,,,,,,"always off",,,,false,,"SBR",,false
 SBR-001017,"Array out of range error",false,"0",,,,,,,"On if an array index is outside the range of the array",,,,false,,"SBR",,false
 SWR-001514,"Array range error rung location",false,"0",,,,,,,"Rung Number in which ""Array out of range error"" occurred",,,,false,,"SWR",,false
@@ -52,7 +59,7 @@ S32-000036,"CYCLE START INHIBIT.Current",false,"0",,,,,,,,false,false,"0",false,
 C-000024,"CYCLE START INHIBIT.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
 C-000026,"CYCLE START INHIBIT.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
 C-000025,"CYCLE START INHIBIT.Less",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
-S32-000034,"CYCLE START INHIBIT.Preset",false,"90000",,,,,,,,false,false,"0",false,,"S32","TMR",false
+S32-000034,"CYCLE START INHIBIT.Preset",false,"270000000",,,,,,,,false,false,"0",false,,"S32","TMR",false
 S32-000035,"CYCLE START INHIBIT.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 SWR-001523,"Clock Day",false,"0",,,,,,,"current Real Time Clock Calendar Day",,,,false,,"SWR",,false
 SWRW-001754,"Clock Day Set",false,"0",,,,,,,"new Real Time Clock Day (set all 3 date values then set ""Initiate_New_Date"" on)",,,,false,,"SWRW",,false
@@ -113,6 +120,7 @@ SWR-001516,"Current I/O Config Error Base",false,"0",,,,,,,"I/O base in which ""
 SWR-001515,"Current I/O Config Error Group",false,"0",,,,,,,"I/O group in which ""I/O Configuration Error"" occurred",,,,false,,"SWR",,false
 SWR-001517,"Current I/O Config Error Slot",false,"0",,,,,,,"I/O slot in which ""I/O Configuration Error"" occurred",,,,false,,"SWR",,false
 SWR-001511,"Current Non-critical Error",false,"0",,,,,,,"current noncritical error number",,,,false,,"SWR",,false
+DI-0.1.1.13,"DI-0.1.1.13",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.13","DI",,false
 DI-0.1.1.14,"DI-0.1.1.14",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.14","DI",,false
 DI-0.1.1.15,"DI-0.1.1.15",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.15","DI",,false
 DI-0.1.1.16,"DI-0.1.1.16",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.16","DI",,false
@@ -138,14 +146,13 @@ DO-0.1.4.6,"DO-0.1.4.6",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.6","DO"
 DO-0.1.4.7,"DO-0.1.4.7",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.7","DO",,false
 DO-0.1.4.8,"DO-0.1.4.8",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.8","DO",,false
 DI-0.1.1.8,"DOWN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.8","DI",,false
-SSTRUC-000018,"DO_NOT_PUSH",false,,,,,,,,"System Structure for Counter",,,,false,,"SSTRUC","CNT",false
-S32-000039,"DO_NOT_PUSH.Current",true,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
-C-000028,"DO_NOT_PUSH.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
-C-000030,"DO_NOT_PUSH.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
-C-000029,"DO_NOT_PUSH.Less",false,"0",,,,,,,,false,false,"0",false,,"C","CNT",false
-S32-000037,"DO_NOT_PUSH.Preset",false,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
-S32-000038,"DO_NOT_PUSH.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","CNT",false
-DI-0.1.1.13,"DO_NOT_PUSH_BTN",false,"0",,,,,,,,false,false,"0",false,"DI-0.1.1.13","DI",,false
+SSTRUC-000020,"DUMP DOWN LOCKOUT TIMER",false,,,,,,,,"System Structure for Timer",,,,false,,"SSTRUC","TMR",false
+S32-000045,"DUMP DOWN LOCKOUT TIMER.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
+C-000035,"DUMP DOWN LOCKOUT TIMER.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000037,"DUMP DOWN LOCKOUT TIMER.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000036,"DUMP DOWN LOCKOUT TIMER.Less",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+S32-000043,"DUMP DOWN LOCKOUT TIMER.Preset",false,"15",,,,,,,,false,false,"0",false,,"S32","TMR",false
+S32-000044,"DUMP DOWN LOCKOUT TIMER.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 DI-0.1.1.6,"DUMP LIMIT",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.6","DI",,false
 SSTRUC-000006,"DUMP LIMIT TMR",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000012,"DUMP LIMIT TMR.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
@@ -190,18 +197,6 @@ MST-0.0.0.35,"MST-0.0.0.35",false,"0",,,,,,,"TB Port Ready Bit",false,false,"0",
 MST-0.0.0.65,"MST-0.0.0.65",false,"0",,,,,,,"Ethernet Heartbeat Timeout Bit",false,false,"0",false,"MST-0.0.0.65","MST",,false
 MST-0.0.0.66,"MST-0.0.0.66",false,"0",,,,,,,"Ethernet Port Buffer Full Bit (95% Full)",false,false,"0",false,"MST-0.0.0.66","MST",,false
 MST-0.0.0.67,"MST-0.0.0.67",false,"0",,,,,,,"Ethernet Port Ready Bit",false,false,"0",false,"MST-0.0.0.67","MST",,false
-SSTRUC-000013,"MYSTERY TMR 1",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
-S32-000026,"MYSTERY TMR 1.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
-C-000017,"MYSTERY TMR 1.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
-S32-000025,"MYSTERY TMR 1.Preset",false,"30000",,,,,,,,false,false,"0",false,,"S32","STMR",false
-SSTRUC-000014,"MYSTERY TMR 2",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
-S32-000028,"MYSTERY TMR 2.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
-C-000018,"MYSTERY TMR 2.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
-S32-000027,"MYSTERY TMR 2.Preset",false,"25",,,,,,,,false,false,"0",false,,"S32","STMR",false
-SSTRUC-000015,"MYSTERY TMR 3",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
-S32-000030,"MYSTERY TMR 3.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
-C-000019,"MYSTERY TMR 3.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
-S32-000029,"MYSTERY TMR 3.Preset",false,"25",,,,,,,,false,false,"0",false,,"S32","STMR",false
 SBR-001013,"Noncritical Error Bit",false,"0",,,,,,,"On when a noncritical error is active",,,,false,,"SBR",,false
 SWR-000021,"Noncritical Error Log 01",false,"0",,,,,,,"most recent noncritical error",,,,false,,"SWR",,false
 SWR-000022,"Noncritical Error Log 02",false,"0",,,,,,,"2nd most recent noncritical error",,,,false,,"SWR",,false
@@ -256,6 +251,10 @@ SWR-001512,"Program Memory Size",false,"0",,,,,,,"current percentage of CPU memo
 C-000020,"REMOTE START BIT",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 DO-0.1.2.11,"REMOTE START LIGHT",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.11","DO",,false
 DI-0.1.1.12,"REMOTE START SWITCH",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.12","DI",,false
+SSTRUC-000013,"REMOTE START TIMER",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
+S32-000026,"REMOTE START TIMER.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
+C-000017,"REMOTE START TIMER.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
+S32-000025,"REMOTE START TIMER.Preset",false,"30000",,,,,,,,false,false,"0",false,,"S32","STMR",false
 SSTRUC-000010,"REMOTE STOP DELAY",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000020,"REMOTE STOP DELAY.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000014,"REMOTE STOP DELAY.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
@@ -263,6 +262,7 @@ S32-000019,"REMOTE STOP DELAY.Preset",false,"20",,,,,,,,false,false,"0",false,,"
 DI-0.1.1.11,"REMOTE STOP SWITCH",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.11","DI",,false
 C-000006,"REMOTE SYSTEM STOP",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 C-000007,"REV JAM DETECTION",false,"0",,,,,,,,false,false,"0",false,,"C",,false
+C-000034,"RUN MODE",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 SBRW-001003,"Refresh Critical Error Log",false,"0",,,,,,,"set On to refresh the ""Critical Error Log""",,,,false,,"SBRW",,false
 SBRW-001004,"Refresh Non-Critical Error Log",false,"0",,,,,,,"set On to refresh the ""Noncritical Error Log""",,,,false,,"SBRW",,false
 SSTR-000103,"Requested Module Name",false,,,,50,,,,"name of specified module (see ""Identify Module Request bit"")",,,,false,,"SSTR",,false
