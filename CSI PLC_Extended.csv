@@ -146,6 +146,10 @@ DO-0.1.4.6,"DO-0.1.4.6",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.6","DO"
 DO-0.1.4.7,"DO-0.1.4.7",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.7","DO",,false
 DO-0.1.4.8,"DO-0.1.4.8",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.8","DO",,false
 DI-0.1.1.8,"DOWN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.8","DI",,false
+SSTRUC-000021,"DUMP DOWN LOCKOUT OVERRIDE",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
+S32-000047,"DUMP DOWN LOCKOUT OVERRIDE.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
+C-000038,"DUMP DOWN LOCKOUT OVERRIDE.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
+S32-000046,"DUMP DOWN LOCKOUT OVERRIDE.Preset",false,"10",,,,,,,,false,false,"0",false,,"S32","STMR",false
 SSTRUC-000020,"DUMP DOWN LOCKOUT TIMER",false,,,,,,,,"System Structure for Timer",,,,false,,"SSTRUC","TMR",false
 S32-000045,"DUMP DOWN LOCKOUT TIMER.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 C-000035,"DUMP DOWN LOCKOUT TIMER.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
