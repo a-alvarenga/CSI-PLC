@@ -52,6 +52,10 @@ SSTR-000060,"CPU Event Log String 20",false,,,,50,,,,"20th most recent CPU event
 SSTR-000101,"CPU Model Name",false,,,,50,,,,"CPU Model (ex: ""P3-550"")",,,,false,,"SSTR",,false
 SSTR-000102,"CPU Program File Name",false,,,,50,,,,"CPU program file name",,,,false,,"SSTR",,false
 SBR-001001,"CPU in Run",false,"0",,,,,,,"On during Run or Debug mode",,,,false,,"SBR",,false
+SSTRUC-000023,"CYCLE COUNT",false,,,,,,,,"System Structure for Simple Counter",,,,false,,"SSTRUC","SCNT",false
+S32-000052,"CYCLE COUNT.Current",true,"0",,,,,,,,false,false,"0",false,,"S32","SCNT",false
+C-000042,"CYCLE COUNT.Done",false,"0",,,,,,,,false,false,"0",false,,"C","SCNT",false
+S32-000051,"CYCLE COUNT.Preset",false,"0",,,,,,,,false,false,"0",false,,"S32","SCNT",false
 SSTRUC-000017,"CYCLE START INHIBIT",false,,,,,,,,"System Structure for Timer",,,,false,,"SSTRUC","TMR",false
 C-000027,"CYCLE START INHIBIT CONTROL BIT",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 DO-0.1.2.9,"CYCLE START INHIBIT LIGHT",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.9","DO",,false
@@ -145,7 +149,7 @@ DO-0.1.4.5,"DO-0.1.4.5",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.5","DO"
 DO-0.1.4.6,"DO-0.1.4.6",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.6","DO",,false
 DO-0.1.4.7,"DO-0.1.4.7",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.7","DO",,false
 DO-0.1.4.8,"DO-0.1.4.8",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.4.8","DO",,false
-DI-0.1.1.8,"DOWN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.8","DI",,false
+DI-0.1.1.8,"DOWN BTN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.8","DI",,false
 SSTRUC-000021,"DUMP DOWN LOCKOUT OVERRIDE",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000047,"DUMP DOWN LOCKOUT OVERRIDE.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
 C-000038,"DUMP DOWN LOCKOUT OVERRIDE.Done",false,"0",,,,,,,,false,false,"0",false,,"C","STMR",false
@@ -190,6 +194,10 @@ SBRW-001005,"Identify Module Request bit",false,"0",,,,,,,"set On to refresh ""R
 SWRW-001759,"Identify Module Slot Number",false,"0",,,,,,,"slot number of module to be identified (See ""Requested Module Name"" tag)",,,,false,,"SWRW",,false
 SBRW-001002,"Initiate_New_Date",false,"0",,,,,,,"set On to change clock date (see ""Clock Year Set"" tag)",,,,false,,"SBRW",,false
 SBRW-001001,"Initiate_New_Time",false,"0",,,,,,,"set On to change clock time (see ""Clock Hours Set"" tag)",,,,false,,"SBRW",,false
+SSTRUC-000026,"JAM COUNT",false,,,,,,,,"System Structure for Simple Counter",,,,false,,"SSTRUC","SCNT",false
+S32-000059,"JAM COUNT.Current",true,"0",,,,,,,,false,false,"0",false,,"S32","SCNT",false
+C-000047,"JAM COUNT.Done",false,"0",,,,,,,,false,false,"0",false,,"C","SCNT",false
+S32-000058,"JAM COUNT.Preset",false,"0",,,,,,,,false,false,"0",false,,"S32","SCNT",false
 SWR-001504,"Last Logic Scan Time [x100=usec]",false,"0",,,,,,,"most recent logic scan time",,,,false,,"SWR",,false
 SWR-001501,"Last Scan Interval [x100=usec]",false,"0",,,,,,,"most recent overall scan time",,,,false,,"SWR",,false
 MST-0.0.0.1,"MST-0.0.0.1",false,"0",,,,,,,"RJ-12 Heartbeat Timeout Bit",false,false,"0",false,"MST-0.0.0.1","MST",,false
@@ -267,6 +275,13 @@ DI-0.1.1.11,"REMOTE STOP SWITCH",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1
 C-000006,"REMOTE SYSTEM STOP",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 C-000007,"REV JAM DETECTION",false,"0",,,,,,,,false,false,"0",false,,"C",,false
 C-000034,"RUN MODE",false,"0",,,,,,,,false,false,"0",false,,"C",,false
+SSTRUC-000025,"RUN TIME",false,,,,,,,,"System Structure for Timer",,,,false,,"SSTRUC","TMR",false
+S32-000057,"RUN TIME.Current",true,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
+C-000044,"RUN TIME.Equal",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000046,"RUN TIME.Greater",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+C-000045,"RUN TIME.Less",false,"0",,,,,,,,false,false,"0",false,,"C","TMR",false
+S32-000055,"RUN TIME.Preset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
+S32-000056,"RUN TIME.Reset",false,"0",,,,,,,,false,false,"0",false,,"S32","TMR",false
 SBRW-001003,"Refresh Critical Error Log",false,"0",,,,,,,"set On to refresh the ""Critical Error Log""",,,,false,,"SBRW",,false
 SBRW-001004,"Refresh Non-Critical Error Log",false,"0",,,,,,,"set On to refresh the ""Noncritical Error Log""",,,,false,,"SBRW",,false
 SSTR-000103,"Requested Module Name",false,,,,50,,,,"name of specified module (see ""Identify Module Request bit"")",,,,false,,"SSTR",,false
@@ -289,7 +304,7 @@ SBR-001010,"Switch in Run Bit",false,"0",,,,,,,"On if CPU Switch is up (Run)",,,
 SBR-001011,"Switch in Stop Bit",false,"0",,,,,,,"On if CPU Switch is down (Stop)",,,,false,,"SBR",,false
 SWR-001507,"Total Scan Count1",false,"0",,,,,,,"total number of scans since entering Run mode (S32 low word)",,,,false,,"SWR",,false
 SWR-001508,"Total Scan Count2",false,"0",,,,,,,"total number of scans since entering Run mode (S32 high word)",,,,false,,"SWR",,false
-DI-0.1.1.7,"UP",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.7","DI",,false
+DI-0.1.1.7,"UP BTN",false,"0",,,,,,,,true,false,"0",false,"DI-0.1.1.7","DI",,false
 DO-0.1.2.3,"WB FWD",false,"0",,,,,,,,false,false,"0",false,"DO-0.1.2.3","DO",,false
 SSTRUC-000003,"WB FWD DELAY",false,,,,,,,,"System Structure for Simple Timer",,,,false,,"SSTRUC","STMR",false
 S32-000006,"WB FWD DELAY.Current",false,"0",,,,,,,,false,false,"0",false,,"S32","STMR",false
