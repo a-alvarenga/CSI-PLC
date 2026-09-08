@@ -16,6 +16,7 @@ C-000033,"AUTO STOP TIMER.Greater",false,"0",,,,,,,,false,false,"0"
 C-000032,"AUTO STOP TIMER.Less",false,"0",,,,,,,,false,false,"0"
 S32-000040,"AUTO STOP TIMER.Preset",false,"75",,,,,,,,false,false,"0"
 S32-000041,"AUTO STOP TIMER.Reset",false,"0",,,,,,,,false,false,"0"
+S16-000002,"Active_sack_state",false,"0",,,,,,,,false,false,"0"
 SBR-001002,"Always Off Bit",false,"0",,,,,,,"always off",,,
 SBR-001017,"Array out of range error",false,"0",,,,,,,"On if an array index is outside the range of the array",,,
 SWR-001514,"Array range error rung location",false,"0",,,,,,,"Rung Number in which ""Array out of range error"" occurred",,,
@@ -123,10 +124,6 @@ DI-0.1.1.13,"DI-0.1.1.13",false,"0",,,,,,,,false,false,"0"
 DI-0.1.1.14,"DI-0.1.1.14",false,"0",,,,,,,,false,false,"0"
 DI-0.1.1.15,"DI-0.1.1.15",false,"0",,,,,,,,false,false,"0"
 DI-0.1.1.16,"DI-0.1.1.16",false,"0",,,,,,,,false,false,"0"
-DI-0.1.3.1,"DI-0.1.3.1",false,"0",,,,,,,,false,false,"0"
-DI-0.1.3.2,"DI-0.1.3.2",false,"0",,,,,,,,false,false,"0"
-DI-0.1.3.3,"DI-0.1.3.3",false,"0",,,,,,,,false,false,"0"
-DI-0.1.3.4,"DI-0.1.3.4",false,"0",,,,,,,,false,false,"0"
 DI-0.1.3.5,"DI-0.1.3.5",false,"0",,,,,,,,false,false,"0"
 DI-0.1.3.6,"DI-0.1.3.6",false,"0",,,,,,,,false,false,"0"
 DI-0.1.3.7,"DI-0.1.3.7",false,"0",,,,,,,,false,false,"0"
@@ -136,8 +133,6 @@ DO-0.1.2.13,"DO-0.1.2.13",false,"0",,,,,,,,false,false,"0"
 DO-0.1.2.14,"DO-0.1.2.14",false,"0",,,,,,,,false,false,"0"
 DO-0.1.2.15,"DO-0.1.2.15",false,"0",,,,,,,,false,false,"0"
 DO-0.1.2.16,"DO-0.1.2.16",false,"0",,,,,,,,false,false,"0"
-DO-0.1.4.1,"DO-0.1.4.1",false,"0",,,,,,,,false,false,"0"
-DO-0.1.4.2,"DO-0.1.4.2",false,"0",,,,,,,,false,false,"0"
 DO-0.1.4.3,"DO-0.1.4.3",false,"0",,,,,,,,false,false,"0"
 DO-0.1.4.4,"DO-0.1.4.4",false,"0",,,,,,,,false,false,"0"
 DO-0.1.4.5,"DO-0.1.4.5",false,"0",,,,,,,,false,false,"0"
@@ -155,6 +150,12 @@ C-000036,"DUMP DOWN LOCKOUT TIMER.Less",false,"0",,,,,,,,false,false,"0"
 S32-000043,"DUMP DOWN LOCKOUT TIMER.Preset",false,"15",,,,,,,,false,false,"0"
 S32-000044,"DUMP DOWN LOCKOUT TIMER.Reset",false,"0",,,,,,,,false,false,"0"
 DI-0.1.1.6,"DUMP LIMIT",false,"0",,,,,,,,true,false,"0"
+S32-000093,"DUMP LIMIT TIMER.Current",false,"0",,,,,,,,false,false,"0"
+C-000121,"DUMP LIMIT TIMER.Equal",false,"0",,,,,,,,false,false,"0"
+C-000123,"DUMP LIMIT TIMER.Greater",false,"0",,,,,,,,false,false,"0"
+C-000122,"DUMP LIMIT TIMER.Less",false,"0",,,,,,,,false,false,"0"
+S32-000091,"DUMP LIMIT TIMER.Preset",true,"1800",,,,,,,,false,false,"0"
+S32-000092,"DUMP LIMIT TIMER.Reset",false,"0",,,,,,,,false,false,"0"
 S32-000012,"DUMP LIMIT TMR.Current",false,"0",,,,,,,,false,false,"0"
 C-000010,"DUMP LIMIT TMR.Done",false,"0",,,,,,,,false,false,"0"
 S32-000011,"DUMP LIMIT TMR.Preset",false,"1800",,,,,,,,false,false,"0"
@@ -170,6 +171,7 @@ SWR-001526,"Ethernet Speed [External]",false,"0",,,,,,,"""Ethernet"" port speed 
 SWR-001527,"Ethernet Speed [Internal]",false,"0",,,,,,,"""Remote I/O"" port speed (Ethernet 10 or 100)",,,
 SBR-001004,"Every Other Scan Bit",false,"0",,,,,,,"toggles at the start of each scan",,,
 C-000004,"FWD JAM DETECTION",false,"0",,,,,,,,false,false,"0"
+C-000107,"Fill_enable",false,"0",,,,,,,,false,false,"0"
 SWR-001509,"Firmware Version",false,"0",,,,,,,"CPU Firmware Version Number in Hex (ex: 0x0102 is version 01.02 or 1.2)",,,
 SSTR-000104,"Firmware Version[CPU]",false,,,,50,,,,"CPU firmware version viewed as 001.000.009.023",,,
 SWR-001528,"Firmware Version[major]",false,"0",,,,,,,"CPU firmware Major version number in hex. (ex:  0x0100 =  major version 1.0)",,,
@@ -177,6 +179,7 @@ SWR-001529,"Firmware Version[minor]",false,"0",,,,,,,"CPU firmware Minor version
 SBR-001003,"First Scan Bit",false,"0",,,,,,,"On during first scan in Run or Debug mode",,,
 SWR-001530,"First Scan Interval [x100=usec]",false,"0",,,,,,,"Holds the value of the First Scan time",,,
 SBR-001007,"Forces Enabled",false,"0",,,,,,,"On if any forces are enabled",,,
+S16-000001,"Full_sack_weight",true,"2300",,,,,,,,false,false,"0"
 SBR-001015,"I/O Configuration Error",false,"0",,,,,,,"On if actual I/O configuration and project I/O configuration do not match",,,
 SBR-001014,"I/O Error",false,"0",,,,,,,"On for any module error (such as a blown fuse)",,,
 SWRW-001758,"Identify Module Base Number",false,"0",,,,,,,"base number of module to be identified (See ""Requested Module Name"" tag)",,,
@@ -199,6 +202,10 @@ MST-0.0.0.35,"MST-0.0.0.35",false,"0",,,,,,,"TB Port Ready Bit",false,false,"0"
 MST-0.0.0.65,"MST-0.0.0.65",false,"0",,,,,,,"Ethernet Heartbeat Timeout Bit",false,false,"0"
 MST-0.0.0.66,"MST-0.0.0.66",false,"0",,,,,,,"Ethernet Port Buffer Full Bit (95% Full)",false,false,"0"
 MST-0.0.0.67,"MST-0.0.0.67",false,"0",,,,,,,"Ethernet Port Ready Bit",false,false,"0"
+MST-0.0.0.81,"MST-0.0.0.81",false,"0",,,,,,,"Remote Ethernet Heartbeat Timeout Bit",false,false,"0"
+MST-0.0.0.82,"MST-0.0.0.82",false,"0",,,,,,,"Remote Ethernet Port Buffer Full Bit (95% Full)",false,false,"0"
+MST-0.0.0.83,"MST-0.0.0.83",false,"0",,,,,,,"Remote Ethernet Port Ready Bit",false,false,"0"
+C-000111,"Manual_switch_left",false,"0",,,,,,,,false,false,"0"
 SBR-001013,"Noncritical Error Bit",false,"0",,,,,,,"On when a noncritical error is active",,,
 SWR-000021,"Noncritical Error Log 01",false,"0",,,,,,,"most recent noncritical error",,,
 SWR-000022,"Noncritical Error Log 02",false,"0",,,,,,,"2nd most recent noncritical error",,,
@@ -303,3 +310,116 @@ C-000009,"WB REV TIME.Done",false,"0",,,,,,,,false,false,"0"
 S32-000009,"WB REV TIME.Preset",false,"10",,,,,,,,false,false,"0"
 DO-0.1.2.1,"WRINGER",false,"0",,,,,,,,false,false,"0"
 SBR-001016,"Watchdog Timeout",false,"0",,,,,,,"On if the actual scan time has exceeded the limit set in the project",,,
+DI-0.1.3.1,"actuator_extended",false,"0",,,,,,,,false,false,"0"
+DI-0.1.3.2,"actuator_retracted",false,"0",,,,,,,,false,false,"0"
+DO-0.1.4.1,"extend_actuator",false,"0",,,,,,,,false,false,"0"
+AR1S16-000002(1),"io_output_data(1)",FALSE,"0",,,,,1,,,,,
+AR1S16-000001(1),"left_io_weight(1)",FALSE,"0",,,,,1,,,,,
+C-000098,"left_sack_active",false,"0",,,,,,,,false,false,"0"
+C-000108,"left_sack_avalible",false,"0",,,,,,,,false,false,"0"
+C-000101,"left_sack_comp.Equal",false,"0",,,,,,,,false,false,"0"
+C-000100,"left_sack_comp.Greater",false,"0",,,,,,,,false,false,"0"
+S32-000078,"left_sack_comp.Input1",false,"0",,,,,,,,false,false,"0"
+S32-000079,"left_sack_comp.Input2",false,"0",,,,,,,,false,false,"0"
+C-000102,"left_sack_comp.Less",false,"0",,,,,,,,false,false,"0"
+DI-0.1.3.3,"left_sack_present",false,"0",,,,,,,,false,false,"0"
+STR-000001,"left_scale.AdapterName",false,,,,16,,,,,,,
+C-000050,"left_scale.Msg1ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000049,"left_scale.Msg1Enable",false,"0",,,,,,,,false,false,"0"
+S32-000061,"left_scale.Msg1GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000051,"left_scale.Msg1RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000003,"left_scale.Msg1StatusDesc",false,,,,32,,,,,,,
+C-000053,"left_scale.Msg2ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000052,"left_scale.Msg2Enable",false,"0",,,,,,,,false,false,"0"
+S32-000062,"left_scale.Msg2GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000054,"left_scale.Msg2RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000004,"left_scale.Msg2StatusDesc",false,,,,32,,,,,,,
+C-000056,"left_scale.Msg3ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000055,"left_scale.Msg3Enable",false,"0",,,,,,,,false,false,"0"
+S32-000063,"left_scale.Msg3GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000057,"left_scale.Msg3RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000005,"left_scale.Msg3StatusDesc",false,,,,32,,,,,,,
+C-000059,"left_scale.Msg4ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000058,"left_scale.Msg4Enable",false,"0",,,,,,,,false,false,"0"
+S32-000064,"left_scale.Msg4GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000060,"left_scale.Msg4RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000006,"left_scale.Msg4StatusDesc",false,,,,32,,,,,,,
+C-000062,"left_scale.Msg5ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000061,"left_scale.Msg5Enable",false,"0",,,,,,,,false,false,"0"
+S32-000065,"left_scale.Msg5GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000063,"left_scale.Msg5RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000007,"left_scale.Msg5StatusDesc",false,,,,32,,,,,,,
+C-000065,"left_scale.Msg6ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000064,"left_scale.Msg6Enable",false,"0",,,,,,,,false,false,"0"
+S32-000066,"left_scale.Msg6GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000066,"left_scale.Msg6RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000008,"left_scale.Msg6StatusDesc",false,,,,32,,,,,,,
+C-000068,"left_scale.Msg7ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000067,"left_scale.Msg7Enable",false,"0",,,,,,,,false,false,"0"
+S32-000067,"left_scale.Msg7GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000069,"left_scale.Msg7RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000009,"left_scale.Msg7StatusDesc",false,,,,32,,,,,,,
+C-000071,"left_scale.Msg8ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000070,"left_scale.Msg8Enable",false,"0",,,,,,,,false,false,"0"
+S32-000068,"left_scale.Msg8GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000072,"left_scale.Msg8RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000010,"left_scale.Msg8StatusDesc",false,,,,32,,,,,,,
+C-000048,"left_scale.TCPConnected",false,"0",,,,,,,,false,false,"0"
+STR-000002,"left_scale.TcpIpError",false,,,,32,,,,,,,
+S32-000060,"left_scale.VendorID",false,"0",,,,,,,,false,false,"0"
+C-000110,"manual_sack_select",false,"0",,,,,,,,false,false,"0"
+DO-0.1.4.2,"retract_actuator",false,"0",,,,,,,,false,false,"0"
+AR1S16-000003(1),"right_io_data(1)",FALSE,"0",,,,,1,,,,,
+AR1S32-000001(1),"right_io_weight(1)",FALSE,"0",,,,,1,,,,,
+C-000099,"right_sack_active",false,"0",,,,,,,,false,false,"0"
+C-000109,"right_sack_avalible",false,"0",,,,,,,,false,false,"0"
+C-000104,"right_sack_comp.Equal",false,"0",,,,,,,,false,false,"0"
+C-000103,"right_sack_comp.Greater",false,"0",,,,,,,,false,false,"0"
+S32-000080,"right_sack_comp.Input1",false,"0",,,,,,,,false,false,"0"
+S32-000081,"right_sack_comp.Input2",false,"0",,,,,,,,false,false,"0"
+C-000105,"right_sack_comp.Less",false,"0",,,,,,,,false,false,"0"
+DI-0.1.3.4,"right_sack_present",false,"0",,,,,,,,false,false,"0"
+STR-000011,"right_scale.AdapterName",false,,,,16,,,,,,,
+C-000075,"right_scale.Msg1ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000074,"right_scale.Msg1Enable",false,"0",,,,,,,,false,false,"0"
+S32-000070,"right_scale.Msg1GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000076,"right_scale.Msg1RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000013,"right_scale.Msg1StatusDesc",false,,,,32,,,,,,,
+C-000078,"right_scale.Msg2ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000077,"right_scale.Msg2Enable",false,"0",,,,,,,,false,false,"0"
+S32-000071,"right_scale.Msg2GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000079,"right_scale.Msg2RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000014,"right_scale.Msg2StatusDesc",false,,,,32,,,,,,,
+C-000081,"right_scale.Msg3ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000080,"right_scale.Msg3Enable",false,"0",,,,,,,,false,false,"0"
+S32-000072,"right_scale.Msg3GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000082,"right_scale.Msg3RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000015,"right_scale.Msg3StatusDesc",false,,,,32,,,,,,,
+C-000084,"right_scale.Msg4ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000083,"right_scale.Msg4Enable",false,"0",,,,,,,,false,false,"0"
+S32-000073,"right_scale.Msg4GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000085,"right_scale.Msg4RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000016,"right_scale.Msg4StatusDesc",false,,,,32,,,,,,,
+C-000087,"right_scale.Msg5ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000086,"right_scale.Msg5Enable",false,"0",,,,,,,,false,false,"0"
+S32-000074,"right_scale.Msg5GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000088,"right_scale.Msg5RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000017,"right_scale.Msg5StatusDesc",false,,,,32,,,,,,,
+C-000090,"right_scale.Msg6ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000089,"right_scale.Msg6Enable",false,"0",,,,,,,,false,false,"0"
+S32-000075,"right_scale.Msg6GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000091,"right_scale.Msg6RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000018,"right_scale.Msg6StatusDesc",false,,,,32,,,,,,,
+C-000093,"right_scale.Msg7ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000092,"right_scale.Msg7Enable",false,"0",,,,,,,,false,false,"0"
+S32-000076,"right_scale.Msg7GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000094,"right_scale.Msg7RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000019,"right_scale.Msg7StatusDesc",false,,,,32,,,,,,,
+C-000096,"right_scale.Msg8ConnOnline",false,"0",,,,,,,,false,false,"0"
+C-000095,"right_scale.Msg8Enable",false,"0",,,,,,,,false,false,"0"
+S32-000077,"right_scale.Msg8GenStatus",false,"0",,,,,,,,false,false,"0"
+C-000097,"right_scale.Msg8RunIdleStatus",false,"0",,,,,,,,false,false,"0"
+STR-000020,"right_scale.Msg8StatusDesc",false,,,,32,,,,,,,
+C-000073,"right_scale.TCPConnected",false,"0",,,,,,,,false,false,"0"
+STR-000012,"right_scale.TcpIpError",false,,,,32,,,,,,,
+S32-000069,"right_scale.VendorID",false,"0",,,,,,,,false,false,"0"
